@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "802024852859",
+    "project_id": "cnmng-5c707",
+    "storage_bucket": "cnmng-5c707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802024852859:android:eaf8160334ca5b569c01de",
+        "android_client_info": {
+          "package_name": "com.corriere.cnmngroup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802024852859-hmgicel7a7mvpjdic0nt9p27kl1e9gtk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8hCNl0eEczcLAiTCLSBkjYnChg77VnXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802024852859-hmgicel7a7mvpjdic0nt9p27kl1e9gtk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
