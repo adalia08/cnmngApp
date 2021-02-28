@@ -39,6 +39,11 @@ class _BrowseState extends State<Browse> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        backgroundColor: Colors.lightGreen[400],
+        title: Text('News Feed'),
+        centerTitle: true,
+      ),
       body: ListView.builder(
         itemCount: art.length,
         itemBuilder: (context, index) {
@@ -46,6 +51,7 @@ class _BrowseState extends State<Browse> {
             padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 6.0),
             child: Container(
               child: Card(
+                elevation: 0,
                 child: Column(
                   children: [
                     ListTile(
@@ -62,8 +68,12 @@ class _BrowseState extends State<Browse> {
                     ),
                     art[index].im1 != '  '
                         ? Image.network(art[index].im1)
-                        : Image.network(
-                            'https://cnmng.ca/wp-content/uploads/2021/02/Shieldlogo_cnmng-sm.jpg'),
+                        : ResizeImage(
+                            NetworkImage(
+                                'https://cnmng.ca/wp-content/uploads/2021/02/Shieldlogo_cnmng-sm.jpg',
+                                scale: 0.5),
+                            height: 14,
+                            width: 13),
                     Text(art[index].author + ' ' + art[index].date),
                     Text(art[index].cat + ' ' + art[index].lang),
                   ],

@@ -23,7 +23,8 @@ class _ExploreState extends State<Explore> {
     "POLITICS",
     "SHOW BIZ",
     "SPORT",
-    "WEEK IN REVIEW"
+    "WEEK IN REVIEW",
+    "'"
   ];
   List<Articley> art = new List<Articley>();
 
@@ -57,7 +58,7 @@ class _ExploreState extends State<Explore> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        backgroundColor: Colors.green[500],
+        backgroundColor: Colors.lightGreen[400],
         title: Text('Explore'),
         centerTitle: true,
       ),

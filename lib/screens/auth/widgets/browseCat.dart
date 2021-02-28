@@ -64,27 +64,26 @@ class _BrowseCatState extends State<BrowseCat> {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 6.0),
             child: Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.green[300],
-                  width: 3,
-                ),
-              ),
               child: Card(
                 child: Column(
                   children: [
-                    ListTile(
-                      onTap: () {
-                        jiggle(index);
-                      },
-                      title: Text(
-                        sart[index].title,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
+                    sart.length == 0
+                        ? ListTile(
+                            onTap: () {},
+                            title: Text(
+                                "No articles in this category yet! Come back sometime soon!"))
+                        : ListTile(
+                            onTap: () {
+                              jiggle(index);
+                            },
+                            title: Text(
+                              sart[index].title,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
                     sart[index].im1 != '  '
                         ? Image.network(sart[index].im1)
                         : Image.network(

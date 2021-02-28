@@ -22,6 +22,21 @@ class Article extends StatelessWidget {
     // than having to individually change instances of widgets.
     return Scaffold(
       backgroundColor: Colors.grey[600],
+      // appBar: PreferredSize(
+      //   preferredSize: Size.fromHeight(30.0),
+      //   child: AppBar(
+      //     backgroundColor: Colors.grey[600],
+      //     elevation: 0,
+      //
+      //     leading: IconButton(
+      //       icon: Icon(Icons.arrow_back),
+      //       onPressed: (){
+      //         Navigator.push(context,
+      //             MaterialPageRoute(builder: (context) => Browse()));
+      //       },
+      //     ),
+      //   ),
+      // ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[

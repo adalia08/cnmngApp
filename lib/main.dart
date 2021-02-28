@@ -7,6 +7,7 @@ import 'package:cnmngroup/config/palette.dart';
 import 'package:cnmngroup/screens/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+
 import 'screens/home.dart';
 
 class MyHttpOverrides extends HttpOverrides {
