@@ -17,11 +17,19 @@ class _SettingsScreenState extends State<ProfileBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-          body: SettingsList(
+      backgroundColor: Colors.grey[200],
+          body: Padding(
+            // I set the padding here to only the top, you can increase the double (16.0) to suit exactly what you're looking to achieve visually
+              padding: EdgeInsets.only(top: 19.0),
+
+
+
+    //SizedBox(height: 0.1),
+              child:   SettingsList(
             sections: [
               SettingsSection(
                 title: 'Languages & Preferences',
+
                 tiles: [
                   SettingsTile(
                     title: 'Language',
@@ -31,23 +39,11 @@ class _SettingsScreenState extends State<ProfileBody> {
                     builder: (BuildContext context) => LanguagesScreen()));
                     },
                   ),
-                  SettingsTile(
-                      title: 'Preferences',
-                      leading: Icon(Icons.room_preferences),
-                      onPressed: (BuildContext context) {},
-                  ),
                   ]
                   ),
               SettingsSection(
                 title: 'Settings',
               tiles: [
-                  SettingsTile.switchTile(
-                      title: 'Notifications',
-                      enabled: notificationsEnabled,
-                      leading: Icon(Icons.notifications_active),
-                      switchValue: true,
-                      onToggle: (value) {},
-                  ),
                   SettingsTile(
                       title: 'Log out',
                     leading: Icon(Icons.login_outlined),
@@ -59,6 +55,8 @@ class _SettingsScreenState extends State<ProfileBody> {
                 ]
               )
             ]
+          )
+
           )
       );
   }

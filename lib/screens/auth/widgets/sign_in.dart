@@ -19,20 +19,18 @@ class SignIn extends StatelessWidget {
     final isSubmitting = context.isSubmitting();
     return SignInForm(
       child: Padding(
-        padding: const EdgeInsets.all(46.0),
+        padding: const EdgeInsets.all(30.0),
         child: Column(
           children: [
-            const Expanded(
-              flex: 3,
+            Expanded(
+              flex: 5,
               child: Align(
                 alignment: Alignment.center,
-                child: LoginTitle(
-                  title: 'Canadian National\n      Multilingual\n      Newsgroup',
-                ),
+                child: Image.asset('assets/cnmngca.png',width:30000,height:10000),
               ),
             ),
             Expanded(
-              flex: 4,
+              flex: 5,
               child: ListView(
                 children: [
                   Padding(
